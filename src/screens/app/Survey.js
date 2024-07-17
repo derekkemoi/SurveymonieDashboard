@@ -49,7 +49,7 @@ export default function Survey() {
     });
 
     useEffect(() => {
-        fetch('https://faderriko.github.io/nyota/nyota.json')
+        fetch('https://derekkemoi.github.io/SurveyMonie/surveys.json')
             .then(response => response.json())
             .then(data => {
                 var dataFilteredSurvey = data.surveys.filter(item => item.surveyId == location.state.Id)
