@@ -4,7 +4,7 @@ import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
-import { Paid, Quiz, StarBorderOutlined, Stars } from '@mui/icons-material';
+import { Payments, Quiz, StarBorderOutlined, Stars } from '@mui/icons-material';
 import { Chip, DialogContent, DialogTitle, FormControl, FormLabel, Modal, ModalDialog } from '@mui/joy';
 
 import { useAtom } from 'jotai';
@@ -69,7 +69,7 @@ export default function HomeSurveyItem(props) {
                                 <Typography color='primary' fontWeight={"bold"} align="left">{props.survey.surveyQuestions.length}</Typography>
                             </Typography>
                         </Typography>
-                        <Typography align="left" startDecorator={<Paid />}>
+                        <Typography align="left" startDecorator={<Payments />}>
                             Payout :
                             {/* <Chip align="left" sx={{ m: 0.1 }} variant="outlined" color="primary"> */}
                             <Typography variant="outlined"
